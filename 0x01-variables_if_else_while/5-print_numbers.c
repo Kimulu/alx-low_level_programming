@@ -9,7 +9,7 @@ int main(void)
 int currentNumber = 0;
 while (currentNumber <= 9)
 {
-printf("%d\n", currentNumber);
+printf("%d", currentNumber);
 currentNumber++;
 }
 return (0);
