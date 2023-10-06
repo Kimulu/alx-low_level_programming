@@ -12,5 +12,6 @@ while (currentNumber <= 9)
 printf("%d", currentNumber);
 currentNumber++;
 }
+printf("\n");
 return (0);
 }
