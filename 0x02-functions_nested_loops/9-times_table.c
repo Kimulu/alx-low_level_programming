@@ -20,6 +20,7 @@ putchar(' ');
 if (product < 10)
 {
 putchar(' ');
+putchar('0' + product);
 }
 else
 {
