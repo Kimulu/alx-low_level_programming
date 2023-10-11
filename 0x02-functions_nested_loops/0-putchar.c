@@ -7,9 +7,11 @@
 */
 void printStr(const char *str)
 {
-for (int i = 0; str[i] != '\0'; i++)
+int i = 0;
+while (str[i] != '\0')
 {
 putchar(str[i]);
+i++;
 }
 }
 /**
