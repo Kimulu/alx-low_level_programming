@@ -13,7 +13,7 @@ int y = 0;
 while (y <= 9)
 {
 v = (x * y);
-_putchar(v + '0');
+putchar(v + '0');
 y++;
 }
 putchar('\n');
