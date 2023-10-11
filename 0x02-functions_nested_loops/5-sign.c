@@ -7,19 +7,23 @@
 */
 int print_sign(int n)
 {
+int num = 0;
+char v = "m";
 if (n > 0)
 {
-putchar('+');
-return (1);
+v = "+";
+num = 1;
 }
 else if (n < 0)
 {
-putchar('-');
-return (-1);
+v = "-";
+num = 0;
 }
 else
 {
-putchar('0');
-return (0);
+v = "0";
+num = -1;
 }
+putchar(v);
+return (num);
 }
