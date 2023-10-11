@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*jack_bauer - prints all hours and min in Jack bauer's day
+*times_table - prints multiples of 0 to 9
 */
-void jack_bauer(void)
+void times_table(void)
 {
 int x = 0;
 while (x <= 9)
@@ -16,5 +16,5 @@ y++;
 }
 putchar('\n');
 x++;
-}
+}   
 }
