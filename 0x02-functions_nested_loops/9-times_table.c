@@ -12,9 +12,9 @@ int y = 0;
 while (y <= 9)
 {
 putchar(x * y);
-y++
+y++;
 }
 putchar('\n');
-x++
+x++;
 }
 }
