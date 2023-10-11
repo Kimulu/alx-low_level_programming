@@ -13,6 +13,7 @@ int x;
 int s;
 new = abs(v);
 x = new % 10;
-s = abs(x)
+s = abs(x);
+_putchar(s + '0');
 return (s);
 }
