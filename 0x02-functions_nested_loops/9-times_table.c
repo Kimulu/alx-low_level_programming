@@ -14,6 +14,8 @@ while (y <= 9)
 {
 v = (x * y);
 putchar(v + '0');
+putchar(',');
+putchar(' ');
 y++;
 }
 putchar('\n');
