@@ -6,7 +6,7 @@
 * Return: Return absolute Value.
 * @v: The character to be evaluated
 */
-int _abs(v)
+int _abs(int v)
 {
 int Val = abs(v);
 return (Val);
