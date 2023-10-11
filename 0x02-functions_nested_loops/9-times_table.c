@@ -6,16 +6,26 @@
 void times_table(void)
 {
 int x = 0;
-int v;
 while (x <= 9)
 {
 int y = 0;
 while (y <= 9)
 {
-v = (x * y);
-putchar(v + '0');
+int product = x * y;
+if (y != 0)
+{
 putchar(',');
 putchar(' ');
+}
+if (product < 10)
+{
+putchar(' ');
+}
+else
+{
+putchar(product / 10 + '0');
+}
+putchar(product % 10 + '0');
 y++;
 }
 putchar('\n');
