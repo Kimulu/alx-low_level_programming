@@ -23,5 +23,6 @@ int main(void)
 {
 const char *myString = "_putchar";
 printStr(myString);
+putchar('\n');
 return (0);
 }
