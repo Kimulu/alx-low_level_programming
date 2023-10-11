@@ -8,20 +8,20 @@
 int print_sign(int n)
 {
 int num = 0;
-char v = "m";
+char v = 'm';
 if (n > 0)
 {
-v = "+";
+v = '+';
 num = 1;
 }
 else if (n < 0)
 {
-v = "-";
+v = '-';
 num = 0;
 }
 else
 {
-v = "0";
+v = '0';
 num = -1;
 }
 putchar(v);
