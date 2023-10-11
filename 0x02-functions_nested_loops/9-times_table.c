@@ -24,9 +24,9 @@ putchar('0' + product);
 }
 else
 {
-putchar(product / 10 + '0');
+putchar('0' + product / 10);
+putchar('0' + product % 10);
 }
-putchar(product % 10 + '0');
 y++;
 }
 putchar('\n');
