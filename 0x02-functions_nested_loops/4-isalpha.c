@@ -8,7 +8,7 @@
  */
 int _isalpha(int c)
 {
-if (isupper(c))
+if (isalpha(c))
 {
 return (1);
 }
