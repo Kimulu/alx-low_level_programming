@@ -6,9 +6,8 @@
  * @j: integer value
  * Return: Returns the sum
  */
-
 int add(int k, int j)
 {
 int f = (k + j);
-return(f);
+return (f);
 }
