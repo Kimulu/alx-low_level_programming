@@ -1,29 +1,37 @@
-#include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
-* main - main function
-* 
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 for (int i = 1; i <= 100; i++)
 {
+char output[9];
 if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FizzBuzz ");
-} else if (i % 3 == 0)
+strcpy(output, "FizzBuzz");
+}
+else if (i % 3 == 0)
 {
-printf("Fizz ");
+strcpy(output, "Fizz");
 }
 else if (i % 5 == 0)
 {
-printf("Buzz ");
+strcpy(output, "Buzz");
 }
 else
 {
-printf("%d ", i);
+snprintf(output, sizeof(output), "%d", i);
 }
+for (int j = 0; j < strlen(output); j++)
+{
+putchar(output[j]);
 }
-printf("\n");
-return 0;
+putchar(' ');
+}
+putchar('\n');
+return (0);
 }
