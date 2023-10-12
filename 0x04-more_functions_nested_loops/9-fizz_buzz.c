@@ -1,37 +1,37 @@
+#include "main.h"
 #include <stdio.h>
-#include <string.h>
+
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - prints the numbers from 1 to 100, followed by a new line.
+ *  Return: 0 for success
  */
+
 int main(void)
 {
-for (int i = 1; i <= 100; i++)
-{
-char output[9];
-if (i % 3 == 0 && i % 5 == 0)
-{
-strcpy(output, "FizzBuzz");
-}
-else if (i % 3 == 0)
-{
-strcpy(output, "Fizz");
-}
-else if (i % 5 == 0)
-{
-strcpy(output, "Buzz");
-}
-else
-{
-snprintf(output, sizeof(output), "%d", i);
-}
-for (int j = 0; j < strlen(output); j++)
-{
-putchar(output[j]);
-}
-putchar(' ');
-}
-putchar('\n');
-return (0);
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 != 0)
+		{
+			printf(" Fizz");
+		} else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf(" Buzz");
+		} else if (i % 15 == 0)
+		{
+			printf(" FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
+		} else
+		{
+			printf(" %d", i);
+		}
+
+	}
+	printf("\n");
+
+	return (0);
+
 }
