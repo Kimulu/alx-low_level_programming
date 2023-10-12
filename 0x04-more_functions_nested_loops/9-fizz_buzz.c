@@ -1,38 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* fizzBuzz- Prints Fizz or Buzz
-* @size: The size of the output.
+* main - main function
+* 
 */
-void fizzBuzz(int size)
+int main(void)
 {
-int i = 0;
-for (i = 0; i <= size; i++)
+for (int i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FizzBuzz")
-}
-else if (i % 3 == 0)
+printf("FizzBuzz ");
+} else if (i % 3 == 0)
 {
-printf("Fizz")
+printf("Fizz ");
 }
 else if (i % 5 == 0)
 {
-printf("Buzz")
+printf("Buzz ");
 }
 else
 {
-_putchar(i + '0');
+printf("%d ", i);
 }
 }
-}
-/**
- * main - check the code
- * Return: Always 0.
- */
-int main(void)
-{
-fizzBuzz(100);
-return (0);
+printf("\n");
+return 0;
 }
