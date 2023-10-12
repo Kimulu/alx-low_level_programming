@@ -1,15 +1,15 @@
-#include <ctype.h>
 #include "main.h"
+
 /**
-*print_numbers - Function for printing numbers 0 to 9
-*Return: Has no return value
-*/
+ * print_numbers - prints the numbers, from 0 t 9
+ */
 void print_numbers(void)
 {
-int i = 0;
-while (i <= 9)
-{
-putchar(i + '0');
-i++;
-}
+	int num;
+
+	for (num = 0; num <= 9; num++)
+	{
+		_putchar(num + '0');
+	}
+	_putchar('\n');
 }
