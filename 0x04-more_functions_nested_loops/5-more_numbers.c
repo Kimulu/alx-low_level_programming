@@ -1,29 +1,21 @@
-#include <ctype.h>
 #include "main.h"
 /**
-*more_numbers - Function for printing numbers 0 to 9
-*Return: Has no return value
+* more_numbers - Prints numbers 0 to 14 ten times
+* followed by a new line.
 */
 void more_numbers(void)
 {
-int i = 0;
-while (i < 10)
+int i, j;
+for (i = 0; i < 10; i++)
 {
-int j = 0;
-while (j <= 14)
+for (j = 0; j <= 14; j++)
 {
-putchar(j + '0');
-if (j < 14)
+if (j > 9)
 {
-putchar(',');
-putchar(' ');
+_putchar((j / 10) + '0');
 }
-else
-{
-putchar('\n');
+_putchar((j % 10) + '0');
 }
-j++;
-}
-i++;
+_putchar('\n');
 }
 }
