@@ -1,19 +1,21 @@
-#include <ctype.h>
 #include "main.h"
 /**
-*print_line - Function for printing aa line with the length set to n
-*@n: The number to use when printing a line
-*Return: Has no return value
-*/
+ * print_line - Draws a straight line of underscores.
+ * @n: The number of times the character '_' should be printed.
+ */
 void print_line(int n)
 {
-if (n > 0)
+if (n <= 0)
 {
-int i = 0;
-while (i < n)
-{
-putchar('_');
-i++;
+_putchar('\n');
 }
+else
+{
+while (n > 0)
+{
+_putchar('_');
+n--;
+}
+_putchar('\n');
 }
 }
