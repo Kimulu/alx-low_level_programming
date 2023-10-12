@@ -1,18 +1,17 @@
-#include <ctype.h>
-#include "main.h"
 /**
-*print_most_numbers- Function for printing numbers 0 to 9
-*Return: Has no return value
-*/
+ * print_most_numbers - Prints numbers 0-9, excluding 2 and 4, followed by a new line.
+ */
 void print_most_numbers(void)
 {
-int i = 0;
-while (i <= 9)
-{
-while (i != 2 && i != 4)
-{
-putchar(i + '0');
-}
-i++;
-}
+    char number;
+
+    for (number = '0'; number <= '9'; number++)
+    {
+        if (number != '2' && number != '4')
+        {
+            _putchar(number);
+        }
+    }
+
+    _putchar('\n');
 }
