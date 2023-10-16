@@ -13,9 +13,10 @@ if (reversed == NULL)
 {
 return;
 }
-char *start = s;
-char *end = s + length - 1;
-char *rev = reversed;
+char *start, *end, *rev;
+start = s;
+end = s + length - 1;
+rev = reversed;
 while (start <= end)
 {
 if (*start != ' ' && *end != ' ')
