@@ -5,20 +5,18 @@
 *rev_string- Function for reversing a string
 *@s: variable for the string
 */
-void rev_string(char *s)
-{
+void rev_string(char *s) {
 int length = strlen(s);
 char *reversed = (char *)malloc(length + 1);
+char *start, *end, *rev;
 if (reversed == NULL)
 {
 return;
 }
-char *start, *end, *rev;
 start = s;
 end = s + length - 1;
 rev = reversed;
-while (start <= end)
-{
+while (start <= end) {
 if (*start != ' ' && *end != ' ')
 {
 *rev++ = *end;
