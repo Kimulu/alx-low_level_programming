@@ -13,20 +13,13 @@ while (*str)
 int i;
 for (i = 0; i < 5; i++)
 {
-if (((*str == 'a' || *str == 'A') && (i == 4)) ||
-((*str == 'e' || *str == 'E') && (i == 3)) ||
-((*str == 'o' || *str == 'O') && (i == 0)) ||
-((*str == 't' || *str == 'T') && (i == 7)) ||
-((*str == 'l' || *str == 'L') && (i == 1)))
+if (*str == "aeotl"[i] || *str == "AEOTL"[i])
 {
-*str = '0' + "43071"[i];
+*str = "43071"[i];
 break;
 }
 }
-if (i == 5)
-{
 str++;
-}
 }
 return (res);
 }
