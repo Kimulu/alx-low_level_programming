@@ -15,7 +15,7 @@ for (i = 0; i < 5; i++)
 {
 if ((*str == "aeotl"[i] || *str == "AEOTL"[i]))
 {
-*str = '4' + i;
+*str = '0' + "43071"[i];
 break;
 }
 }
