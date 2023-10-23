@@ -16,6 +16,5 @@ sum_primary += a[i * size + i];
 sum_secondary += a[i * size + (size - 1 - i)];
 i++;
 }
-printf("%d\n", sum_primary);
-printf("%d\n", sum_secondary);
+printf("%d, %d\n", sum_primary, sum_secondary);
 }
