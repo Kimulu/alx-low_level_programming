@@ -1,31 +1,32 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_strspn - function for finding the count characters in two different strings
+*_strspn - function for finding the found characters in two different strings
 *@s: the string to be evaluated
 *@accept: the bytes to be compared with S
 *Return: return bytes in the initial segment of s that are in accept
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int count = 0;
-int count;
+unsigned int count  = 0;
+int found;
 char current_char;
+char *accept_ptr;
 while (*s)
 {
-count = 0;
+found = 0;
 current_char = *s;
-char *accept_ptr = accept;
+accept_ptr = accept;
 while (*accept_ptr)
 {
 if (current_char == *accept_ptr)
 {
-count = 1;
+found = 1;
 break;
 }
 accept_ptr++;
 }
-if (count)
+if (found)
 {
 count++;
 s++;
