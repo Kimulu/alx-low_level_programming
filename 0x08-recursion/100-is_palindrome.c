@@ -10,7 +10,7 @@ if (*s == '\0')
 {
 return (0);
 }
-return (1 + str_length_recursive(s + 1));
+return (1 + str_length(s + 1));
 }
 /**
 *is_palindrome_helper - function to check if the string is a palindrome
