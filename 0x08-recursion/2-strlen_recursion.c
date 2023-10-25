@@ -10,7 +10,7 @@ int count = 0;
 if (*s != '\0')
 {
 count++;
-strlen_recursion(s + 1);
+_strlen_recursion(s + 1);
 }
 return (count);
 }
