@@ -6,12 +6,11 @@
 */
 int str_length(char *s)
 {
-int length = 0;
-while (s[length] != '\0')
+if (*s == '\0')
 {
-length++;
+return (0);
 }
-return (length);
+return (1 + str_length_recursive(s + 1));
 }
 /**
 *is_palindrome_helper - function to check if the string is a palindrome
