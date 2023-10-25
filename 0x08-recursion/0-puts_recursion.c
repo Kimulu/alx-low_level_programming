@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
 *_puts_recursion - function for printing a string
@@ -9,6 +10,6 @@ if (*s == '\0')
 {
 return;
 }
-putchar(*s);
+_putchar(*s);
 _puts_recursion(s + 1);
 }
