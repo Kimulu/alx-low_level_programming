@@ -12,7 +12,7 @@ return (find_sqrt(n, n / 2));
 *find_sqrt - function for finding the sqrt of n
 *@n: the number
 *@guess: the number the program will guess and try to work from there
-*Return: returns an int with the solution to the power function
+*Return: returns an int with the solution to the sqrt function
 */
 int find_sqrt(int n, int guess)
 {
