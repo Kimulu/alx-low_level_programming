@@ -2,8 +2,8 @@
 /**
 *main - function for printing its program name
 *Return: returns 0
-*@argc: variable for counting
-*@argv: variable for having the number of elements
+*@argc: argument count
+*@argv: array of strings (character pointers)
 */
 int main(int argc, char *argv[])
 {
