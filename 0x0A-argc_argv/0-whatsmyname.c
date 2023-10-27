@@ -1,10 +1,13 @@
 #include <stdio.h>
 /**
-*main - function for printing its name
-*Return: return 0
+*main - function for printing its program name
+*Return: returns 0
+*@argc: variable for counting
+*@argv: variable for having the number of elements
 */
-int main(void)
+int main(int argc, char *argv[])
 {
-printf("%s\n", __FILE__);
+(void)argc;
+printf("%s\n", argv[0]);
 return (0);
 }
