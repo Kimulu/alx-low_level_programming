@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 /**
 *create_array - function to create an array
@@ -8,16 +7,18 @@
 */
 char *create_array(unsigned int size, char c)
 {
+char *array;
+unsigned int i;
 if (size == 0)
 {
 return (NULL);
 }
-char *array = (char *)malloc(size * sizeof(char));
+array = (char *)malloc(size * sizeof(char));
 if (array == NULL)
 {
 return (NULL);
 }
-unsigned int i = 0;
+i = 0;
 while (i < size)
 {
 array[i] = c;
