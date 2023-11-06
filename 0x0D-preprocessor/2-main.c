@@ -1,27 +1,10 @@
-#include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 /**
-*_putchar - function for printing
-*@c: the char
-*Return: int
-*/
-int _putchar(char c)
-{
-return (write(1, &c, 1));
-}
-/**
-*main - function
-*Return: int
+*main - function main
+*Return: return 0
 */
 int main(void)
 {
-const char file_name[] = __FILE__;
-const char *ptr = file_name;
-while (*ptr)
-{
-_putchar(*ptr);
-ptr++;
-}
-_putchar('\n');
+printf("This program was compiled from the file: %s\n", __FILE__);
 return (0);
 }
