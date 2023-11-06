@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "dog.h"
 /**
  * init_dog - Initializes a struct dog with provided values.
