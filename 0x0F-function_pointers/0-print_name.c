@@ -8,11 +8,7 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-while (*name)
-{
 f(name);
-name++;
-}
 }
 /**
 *_putchar - function for printing characters
