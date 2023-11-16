@@ -14,7 +14,7 @@ list_t *current;
 list_t *new_node;
 if (str == NULL)
 return (NULL);
-list_t *new_node = malloc(sizeof(list_t));
+new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
 return (NULL);
 new_node->str = strdup(str);
@@ -30,7 +30,7 @@ if (*head == NULL)
 *head = new_node;
 return (new_node);
 }
-list_t *current = *head;
+current = *head;
 while (current->next != NULL)
 {
 current = current->next;
