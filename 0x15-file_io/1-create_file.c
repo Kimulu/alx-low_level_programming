@@ -17,7 +17,8 @@ size_t length = 0;
 ssize_t bytes_written;
 if (filename == NULL)
 return (-1);
-file_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+file_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR
+	| S_IWUSR);
 if (file_descriptor == -1)
 return (-1);
 if (text_content != NULL)
