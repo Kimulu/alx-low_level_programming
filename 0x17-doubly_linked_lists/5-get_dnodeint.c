@@ -21,7 +21,6 @@ current = current->next;
 count++;
 }
 
-// Check if the node at the specified index exists
 if (count == index && current != NULL)
 {
 return current;
