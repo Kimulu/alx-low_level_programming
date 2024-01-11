@@ -5,7 +5,8 @@
 
 /**
  * get_dnodeint_at_index - Definition of a doubly linked list node
- * @index: A pointer to the pointer to the head of the list.
+ * @index: A pointer to the pointer to the head of the first node in the list.
+ * @head: A pointer to the head of the node in the list
  * Return: nth node
  */
 
@@ -23,8 +24,10 @@ count++;
 
 if (count == index && current != NULL)
 {
-return current;
-} else {
+return (current);
+}
+else
+{
 return (NULL);
 }
 }
